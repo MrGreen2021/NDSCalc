@@ -14,5 +14,13 @@ namespace NDSCalc.ViewModel.Windows
         public decimal NdsRate { get => _ndsRate; set => Set(ref _ndsRate, value); }
         public decimal AmountOfNds { get => _amountOfNds; private set => Set(ref _amountOfNds, value); }
         public decimal TotalAmount { get => _totalAmount; private set => Set(ref _totalAmount, value); }
+
+        public static MainWindowViewModel DemoInstance { get; } = new MainWindowViewModel()
+        {
+            AmountWithoutNds = 123.45m,
+            NdsRate = 67.8m,
+            AmountOfNds = 90.12m,
+            TotalAmount = 345.67m
+        };
     }
 }
