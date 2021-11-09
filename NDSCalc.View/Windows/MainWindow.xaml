@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         DataContext="{x:Static vm:MainWindowViewModel.DemoInstance}"
-        xmlns:Themes1="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero" xmlns:converters="clr-namespace:NDSCalc.View.Converters"
+        xmlns:converters="clr-namespace:NDSCalc.View.Converters"
         Background="DarkGray"
         SizeToContent="WidthAndHeight">
     <FrameworkElement.Resources>
@@ -45,7 +45,7 @@
                 <ColumnDefinition Width="150"/>
                 <ColumnDefinition Width="400"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="0" Text="Ставка НДС:"/>
+            <TextBlock Grid.Column="0" Text="Ставка НДС (%):"/>
             <controls:InputTextBoxStakeNDSControl Grid.Column="1"
                                                   Text="{Binding NdsRate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
         </Grid>

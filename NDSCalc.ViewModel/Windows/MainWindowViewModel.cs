@@ -3,7 +3,7 @@ using Simplified;
 
 namespace NDSCalc.ViewModel.Windows
 {
-    public class MainWindowViewModel : BaseInpc, INdsCalculationViewModel
+    public partial class MainWindowViewModel : BaseInpc, INdsCalculationViewModel
     {
         private decimal _amountWithoutNds;
         private decimal _ndsRate;
